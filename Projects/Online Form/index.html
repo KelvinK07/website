@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body style="background-color: darkcyan;">
+    <div style="width: 600px;height: 800px;margin: auto;padding: 50px;text-align: center;border-radius: 20px;background-color: lightblue;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+    <img style="width: 200px;"src="resources\images\burger king logo.png" alt="logo"/>
+    <h1>Burger King Customer Survey</h1>
+    <hr>
+    <form action="submission.html" method="POST" style="font-size: 14pt;line-height: 1.5;">
+        <label for ="firstname">First Name : </label>
+        <input type="text" name="firstname" placeholder="Enter your First Name" minlength="3" maxlength="15" required>
+        <br>
+        <label for ="lastname">Last Name : </label>
+        <input type="text" name="lastname" placeholder="Enter your Last Name" minlength="3" maxlength="15" required>
+        <br>
+        <span>Gender : </span>
+        <input type="radio" id="male" name="gender" value="no">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="no">
+        <label for="female">Female</label>
+        <hr>
+        <label for="favorite">What Is Your Most Favorite Burger : </label>
+        <select id="favorite" name="favorite">
+            <option value="beef-burger">Beef Burger</option>
+            <option value="chicken-burger">Chicken Burger</option>
+            <option value="pork-burger">Pork Burger</option>
+            <option value="lamb-burger">Lamb Burger</option>
+        </select>
+        <hr>
+        <label for="freq">How Often Do You Eat Burger King?</label>
+        <input type="text" list="freq-list" id="freq" name="freq" required>
+        <datalist id="freq-list">
+            <option value="Once in 3 months"></option>
+            <option value="Once in a months"></option>
+            <option value="Twice in a months"></option>
+            <option value="Once in a week"></option>
+            <option value="I can't live without burger"></option>
+        </datalist>
+        <hr>
+        <label>How Will You Rate Burger King?</label>
+        <input type="number" name="rating" id="rating" min="1" max="10" required>
+        <hr>
+        <label for="rating">What Do You Like About Burger King?</label>
+        <br>
+        <input type="checkbox" name="likes" id="meat">
+        <label for="meat">Meat</label>
+        <input type="checkbox" name="likes" id="bun">
+        <label for="bun">Bun</label>
+        <input type="checkbox" name="likes" id="drinks">
+        <label for="drinks">Drinks</label>
+        <br>
+        <input type="checkbox" name="likes" id="vegtable">
+        <label for="vegtable">Vegtable</label>
+        <input type="checkbox" name="likes" id="services">
+        <label for="services">Services</label>
+        <input type="checkbox" name="likes" id="others">
+        <label for="others">Others</label>
+        <hr>
+        <label for="feedback">Comment/Feedback</label>
+        <br>
+        <textarea id="feedback" name="feedback" rows="5" cols="40" placeholder="Share your thought" required></textarea>
+        <hr>
+        <input type="submit" value="Submit Data">
+    </form>
+    </div>
+    
+</body>
+</html>
