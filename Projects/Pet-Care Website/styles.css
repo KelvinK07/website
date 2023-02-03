@@ -253,7 +253,7 @@ nav a{
         
     }
     .aboutus{
-        background-color: rgba(28, 115, 133,0.6);
+        background-color: rgba(255, 255, 255, 0.8);
     }
     .aboutus img{
         width: 100vw;
@@ -281,14 +281,14 @@ nav a{
     .textcard h2{
         font-size: 10vw;
         margin-bottom: 10px;
-        color: rgb(38, 53, 56);
+        color: rgba(61, 89, 94,1);
         
     }
     .textcard p{
         padding: 0px 2.5vw;
         font-size: 4vw;
         text-align: center;
-        color: rgb(27, 36, 37);
+        color: rgba(61, 89, 94,1);
         font-weight: 600;
         z-index: 3;
     }
@@ -354,6 +354,12 @@ nav a{
     }
     .contact{
         height: 120vh;
+    }
+    .contact h1{
+        font-size: 30pt;
+    }
+    .contact h2{
+        font-size: 20pt;
     }
     .contact h3{
         color: white;
