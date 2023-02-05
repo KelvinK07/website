@@ -90,7 +90,7 @@ nav a{
     justify-content: center;
     position: relative;
 }
-.textcard h2{
+.textcard h1{
     font-size: 2.5vw;
     margin-bottom: 10px;
     color: rgba(61, 89, 94,1);
@@ -135,7 +135,7 @@ nav a{
 }
 .ourservices{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -209,7 +209,7 @@ nav a{
 }
 .contact h1{
     color: white;
-    font-size: 50pt;
+    font-size: 2.5vw;
     font-weight: 800;
 }
 .contact h2{
@@ -253,7 +253,7 @@ nav a{
         
     }
     .aboutus{
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 1);
     }
     .aboutus img{
         width: 100vw;
@@ -262,33 +262,32 @@ nav a{
         object-position: center;
         border-radius: 0px;
         border: 0px;
-        box-shadow: 0px;
-        opacity: 70%;
+        box-shadow: none;
         position: relative;
     }
     .textcard{
         width: 100vw;
         height: 100vh;
         border-radius:0px;
-        box-shadow: 0px;
-        background-color: rgba(219, 251, 255,0);
+        box-shadow: none;
+        background-color: rgba(255, 255, 255, 0.6);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         position: absolute;
     }
-    .textcard h2{
+    .textcard h1{
         font-size: 10vw;
         margin-bottom: 10px;
-        color: rgba(61, 89, 94,1);
+        color: rgba(28, 115, 133,1);
         
     }
     .textcard p{
         padding: 0px 2.5vw;
         font-size: 4vw;
         text-align: center;
-        color: rgba(61, 89, 94,1);
+        color: rgb(41, 55, 58);
         font-weight: 600;
         z-index: 3;
     }
@@ -296,17 +295,18 @@ nav a{
         display: none;
     }
     .ourservices{
-        height: 120vh;
+        min-height: 100vh;
+        padding: 10vh 5vw;
     }
     .ourservices h1{
         font-size: 9vw;
         font-weight: 800;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         color: rgba(28, 115, 133,0.9);
     }
     .forcard{
-        margin-top: 50px;
-        height: 95vh;
+        margin: 20px 0px;
+        height: auto;
         width: 100vw;
         display: flex;
         justify-content: space-evenly;
@@ -316,7 +316,8 @@ nav a{
     .card{
         background-color: rgba(28, 115, 133,1);
         width: 80vw;
-        height: 28vh;
+        height: 55vh;
+        margin: 20px 0px;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
@@ -333,19 +334,20 @@ nav a{
         margin-top:2vh;
     }
     .card h2{
-        font-size: 4vw;
+        font-size: 6vw;
         color: white;
     }
     .card span{
         width: 40%;
-        height: 2%;
+        height: 1%;
         background-color: rgba(110, 214, 235,1);
         border-radius: 20px;
         margin: 5px;
     }
     .card p{
+        text-align: center;
         color: white;
-        font-size: 2.5vw;
+        font-size: 4vw;
         padding: 0px 20px;
     }
     .contact iframe{
@@ -354,6 +356,7 @@ nav a{
     }
     .contact{
         height: 120vh;
+        padding: 5vh 10vw;
     }
     .contact h1{
         font-size: 30pt;
